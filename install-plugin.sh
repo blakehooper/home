@@ -1,3 +1,4 @@
 #!/bin/bash
-mkdir -p ~/.oh-my-zsh/custom/themes/blake
-cp -f ./blake.zsh.plugin ~/.oh-my-zsh/custom/themes/blake/
+PLUGIN_DIR=~/.oh-my-zsh/custom/plugins/blake
+mkdir -p $PLUGIN_DIR
+cp -f ./blake.plugin.zsh $PLUGIN_DIR

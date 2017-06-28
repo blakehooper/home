@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -f ./blake.zsh-theme ~/.oh-my-zsh/themes/
+cp -f ./blake.zsh-theme ~/.oh-my-zsh/custom/themes/
