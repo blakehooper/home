@@ -24,8 +24,6 @@ bindkey "\e\e[C" forward-word
 
 chbr() {
   possibleBranches=("${(@f)$(git branch | cut -c 3- | grep $1 )}")
-  echo ${#possibleBranches}
-  echo $possibleBranches
   if [ ${#possibleBranches} -ge 2 ]; then
     echo 'More than 1 match'
     for x in $possibleBranches; do echo $x; done
