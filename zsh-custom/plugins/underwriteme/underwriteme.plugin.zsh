@@ -17,6 +17,9 @@ alias grails-debug='noglob grails-debug'
 alias shed='cd ~/workspace/the-shed'
 alias shed2='cd ~/workspace/the-shed2'
 alias sld-web='cd ~/workspace/sld-web'
+alias comparison-web='cd ~/workspace/comparison-web'
+alias aegon-web='cd ~/workspace/aegon-web'
+alias lv-web='cd ~/workspace/lv-web'
 
 # Enable command line navigation alt+-> alt+<-
 bindkey "\e\e[D" backward-word
