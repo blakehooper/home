@@ -1,8 +1,3 @@
-# Enable larger history 
-export HISTCONTROL=ignoredups
-export HISTFILESIZE=3000
-export HISTSIZE=1500
-
 alias gw='nocorrect noglob ./gradlew'
 alias find='noglob find'
 alias ws='cd ~/workspace'
