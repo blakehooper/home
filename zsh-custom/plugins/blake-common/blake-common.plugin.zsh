@@ -2,6 +2,9 @@ alias gw='nocorrect noglob ./gradlew'
 alias find='noglob find'
 alias ws='cd ~/workspace'
 
+# Delete up to cursor
+bindkey \^U backward-kill-line
+
 chbr() {
   # possibleBranches=("${(@f)$(git branch | cut -c 3- | grep $1 )}")
   IFS=$'\n'
@@ -13,6 +16,7 @@ chbr() {
     for x in $possibleBranches; do echo $x; done
   elif [ ${#possibleBranches} -eq 0 ]; then
     echo '0 branches locally. Searching remote...'
+    git fetch
     IFS=$'\n'
     possibleBranches=($(git branch -r | cut -c 3- | grep $1 | sed 's/:.*//'))
     unset IFS
