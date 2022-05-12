@@ -1,5 +1,0 @@
-Create free instance
-gcloud compute instances create example-instance --image-family ubuntu-1610 --image-project ubuntu-os-cloud --machine-type=f1-micro --zone us-west1-a
-
-Delete instance
-gcloud compute instances delete example-instance --zone us-west1-a
