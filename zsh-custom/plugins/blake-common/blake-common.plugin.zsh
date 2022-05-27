@@ -5,6 +5,9 @@ alias ws='cd ~/workspace'
 # Delete up to cursor
 bindkey \^U backward-kill-line
 
+# Expand camel case and - directories
+zstyle ':completion:*' matcher-list 'r:[^A-Z0-9\-]||[A-Z0-9\-]=** r:|=*'
+
 chbr() {
   # possibleBranches=("${(@f)$(git branch | cut -c 3- | grep $1 )}")
   IFS=$'\n'
